@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
@@ -12,12 +12,14 @@
       name="keywords"
       content="Perhutani, Jawa Timur, Hutan, Kayu, Gondorukem, Terpentin, Wisata Alam"
     />
-    <link href="assets/img/logo.jpg" rel="apple-touch-icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+        <link rel="icon" type="image/png" href="assets/img/logo.jpg" />
+    <link rel="apple-touch-icon" href="assets/img/logo.jpg" />
+
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -35,86 +37,184 @@
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+     
+      html,
+      body {
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+      .text-justify {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+
+      .topbar {
+        background-color: #27a776 !important;
+        padding: 8px 0 !important;
+        font-size: 14px !important;
+      }
+      .topbar .contact-info a,
+      .topbar .contact-info span {
+        color: #ffffff !important;
+        font-weight: 500 !important;
+        text-decoration: none !important;
+      }
+      .topbar .contact-info i {
+        color: #ffffff !important;
+        margin-right: 6px !important;
+      }
+      .topbar .social-links a {
+        color: #ffffff !important;
+        margin-left: 15px !important;
+        font-size: 16px !important;
+        transition: opacity 0.3s;
+      }
+      .topbar .social-links a:hover {
+        opacity: 0.8;
+      }
+
+      .hero .btn-get-started {
+        background-color: #27a776 !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        padding: 12px 30px !important;
+        border-radius: 30px !important;
+        border: 2px solid #27a776 !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+        transition: all 0.3s ease-in-out !important;
+        display: inline-block !important;
+        text-decoration: none !important;
+      }
+      .hero .btn-get-started:hover {
+        background-color: #1b4332 !important;
+        border-color: #1b4332 !important;
+        color: #ffffff !important;
+        transform: translateY(-2px);
+      }
+
+     
+      .gslide-image img {
+        max-height: 75vh !important;
+        width: auto !important;
+        max-width: 90vw !important;
+        object-fit: contain !important;
+        margin: 0 auto;
+      }
+
+     
+      .footer-custom-theme {
+        background-color: #1b4332 !important;
+        color: #ffffff !important;
+      }
+      .footer-custom-theme a {
+        color: #d8f3dc !important;
+      }
+      .footer-custom-theme a:hover {
+        color: #ffffff !important;
+        text-decoration: underline;
+      }
+
+      
+      .about-content-compact {
+        font-size: 0.93rem;
+        line-height: 1.45;
+      }
+      .about-content-compact ul li {
+        margin-bottom: 6px;
+      }
+    </style>
   </head>
-<link rel="icon" href="assets/img/logo.jpg"
->
+
   <body class="index-page">
     <header id="header" class="header sticky-top">
-      <div class="topbar d-flex align-items-center accent-background">
+      
+      <div class="topbar d-flex align-items-center">
         <div
-          class="container d-flex justify-content-center justify-content-md-between"
+          class="container d-flex justify-content-center justify-content-md-between align-items-center"
         >
-          <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-envelope d-flex align-items-center"
-              ><a href="mailto:humas.jatim@perhutani.co.id"
+          <div class="contact-info d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:humas.jatim@perhutani.co.id"
                 >humas.jatim@perhutani.co.id</a
-              ></i
-            >
-            <i class="bi bi-phone d-flex align-items-center ms-4"
-              ><span>(031) 5343881</span></i
-            >
+              >
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-phone"></i>
+              <span>(031) 5343881</span>
+            </div>
           </div>
           <div class="social-links d-none d-md-flex align-items-center">
             <a
               href="https://x.com/perumperhutani"
               target="_blank"
               class="twitter"
+              title="Twitter / X"
               ><i class="bi bi-twitter-x"></i
             ></a>
             <a
               href="https://facebook.com/perumperhutani"
               target="_blank"
               class="facebook"
+              title="Facebook"
               ><i class="bi bi-facebook"></i
             ></a>
             <a
               href="https://instagram.com/perumperhutani"
               target="_blank"
               class="instagram"
+              title="Instagram"
               ><i class="bi bi-instagram"></i
             ></a>
             <a
               href="https://linkedin.com/company/perum-perhutani"
               target="_blank"
               class="linkedin"
+              title="LinkedIn"
               ><i class="bi bi-linkedin"></i
             ></a>
             <a
               href="https://youtube.com/@perumperhutani"
               target="_blank"
               class="youtube"
+              title="YouTube"
               ><i class="bi bi-youtube"></i
             ></a>
           </div>
         </div>
       </div>
 
+     
       <div class="branding d-flex align-items-center">
-
-        <div class="container-fluid px-4 position-relative d-flex align-items-center justify-content-between">
-          <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-                   <img 
-              src="assets/img/LOGO_PERHUTANI-removebg-preview.png" 
-              alt="Logo Perhutani" 
-              style="height: 42px !important; max-height: none !important; width: auto !important; transform: scale(1.15); transform-origin: left center;" 
-              class="me-2"
-            >
-                        <h1 class="sitename mb-0 style-title" style="font-size: 24px; font-weight: 700; margin-left: 20px;">PT PERHUTANI JATIM</h1>
+        <div
+          class="container-fluid px-4 position-relative d-flex align-items-center justify-content-between"
+        >
+          <a
+            href="index.html"
+            class="logo d-flex align-items-center me-auto me-xl-0"
+          >
+            <img
+              src="assets/img/LOGO_PERHUTANI-removebg-preview.png"
+              alt="Logo Perhutani"
+              style="height: 48px !important; width: auto !important"
+            />
           </a>
 
-          
           <nav id="navmenu" class="navmenu">
             <ul>
               <li><a href="#hero" class="active">Beranda</a></li>
-              <li><a href="#about">Sejarah & Detail</a></li>
+              <li><a href="#about">Sejarah</a></li>
               <li><a href="#produk">Produk</a></li>
+              <li><a href="#wisata">Wisata Alam</a></li>
               <li><a href="#struktural">Struktural</a></li>
-              <li><a href="#contact">Alamat & Maps</a></li>
+              <li><a href="#contact">Alamat</a></li>
               <li class="dropdown">
-                <a href="#"
-                  ><span>Sosial Media</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
+                <a href="#">
+                  <span>Sosial Media</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i>
+                </a>
                 <ul>
                   <li>
                     <a
@@ -151,570 +251,645 @@
       </div>
     </header>
 
-        <section id="hero" class="hero section accent-background">
-
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
+   
+    <section id="hero" class="hero section accent-background">
+      <div
+        id="hero-carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
         <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/foto perhutani 2.png" class="d-block w-100" alt="Hutan Perhutani Jawa Timur">
+          <img
+            src="assets/img/hero-carousel/foto perhutani 2.png"
+            class="d-block w-100"
+            alt="Hutan Perhutani Jawa Timur"
+          />
           <div class="carousel-container">
-            <h2>Selamat Datang di PT Perum Perhutani Divisi Regional Jawa Timur</h2>
-            <p>Pengelolaan sumber daya hutan secara berkelanjutan dan lestari demi kesejahteraan masyarakat dan menjaga keseimbangan ekosistem.</p>
+            <h2>
+              Selamat Datang di PT Perum Perhutani Divisi Regional Jawa Timur
+            </h2>
+            <p>
+              Pengelolaan sumber daya hutan secara berkelanjutan dan lestari
+              demi kesejahteraan masyarakat dan menjaga keseimbangan ekosistem.
+            </p>
             <a href="#about" class="btn-get-started">Jelajahi Profil Kami</a>
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="assets/img/hero-carousel/produk unggulan.jpg" class="d-block w-100" alt="Hasil Produk Perhutani">
+          <img
+            src="assets/img/hero-carousel/produk unggulan.jpg"
+            class="d-block w-100"
+            alt="Hasil Produk Perhutani"
+          />
           <div class="carousel-container">
             <h2>Produk Unggulan Hasil Hutan</h2>
-            <p>Menghasilkan kayu berkualitas tinggi serta produk hasil hutan non-kayu seperti Gondorukem, Terpentin, dan Minyak Kayu Putih.</p>
+            <p>
+              Menghasilkan kayu berkualitas tinggi serta produk hasil hutan
+              non-kayu seperti Gondorukem, Terpentin, dan Minyak Kayu Putih.
+            </p>
             <a href="#produk" class="btn-get-started">Lihat Produk Kami</a>
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="assets/img/hero-carousel/wisata.webp" class="d-block w-100" alt="Ekowisata Hutan Jawa Timur">
+          <img
+            src="assets/img/hero-carousel/wisata.webp"
+            class="d-block w-100"
+            alt="Ekowisata Hutan Jawa Timur"
+          />
           <div class="carousel-container">
             <h2>Ekowisata & Kemitraan Masyarakat</h2>
-            <p>Mengembangkan potensi destinasi wisata alam terpadu bersama Lembaga Masyarakat Desa Hutan (LMDH) di Jawa Timur.</p>
-            <a href="#contact" class="btn-get-started">Hubungi Kami</a>
+            <p>
+              Mengembangkan potensi destinasi wisata alam terpadu bersama
+              Lembaga Masyarakat Desa Hutan (LMDH) di Jawa Timur.
+            </p>
+            <a href="#wisata" class="btn-get-started">Jelajahi Wisata</a>
           </div>
-        </div><!-- End Carousel Item -->
+        </div>
 
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        <a
+          class="carousel-control-prev"
+          href="#hero-carousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bi bi-chevron-left"
+            aria-hidden="true"
+          ></span>
         </a>
 
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        <a
+          class="carousel-control-next"
+          href="#hero-carousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bi bi-chevron-right"
+            aria-hidden="true"
+          ></span>
         </a>
 
         <ol class="carousel-indicators"></ol>
-
       </div>
-
     </section>
 
-      <section id="about" class="about section">
-    
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Sejarah & Detail Perusahaan</h2>
-          <p>Mengenal PT Perum Perhutani Divisi Regional Jawa Timur lebih dekat</p>
-        </div>
-        
+   
+    <section id="about" class="about section">
+      <div class="container section-title mb-3" data-aos="fade-up">
+        <h2>Sejarah</h2>
+        <p>
+          Mengenal PT Perum Perhutani Divisi Regional Jawa Timur lebih dekat
+        </p>
+      </div>
 
-        <div class="container">
-          <div class="row gy-4 align-items-center">
-            <div
-              class="col-lg-6 position-relative align-self-start"
-              data-aos="fade-up"
-              data-aos-delay="100"
+      <div class="container">
+        <div class="row gy-3 align-items-start">
+          <div
+            class="col-lg-6 position-relative"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <a
+              href="https://www.youtube.com/watch?v=jf7C4p7RpXo"
+              target="_blank"
+              title="Putar Video di YouTube"
+              class="w-100 d-block"
             >
-              <a
-                href="https://www.youtube.com/watch?v=jf7C4p7RpXo"
-                target="_blank"
-                title="Putar Video di YouTube"
-              >
-                <img
-                  src="assets/img/thumbnail youtube.jpg"
-                  class="img-fluid rounded shadow"
-                  alt="Thumbnail Perhutani Jatim"
-                />
-                <span class="pulsating-play-btn"></span>
-              </a>
-            </div>
+              <img
+                src="assets/img/thumbnail youtube.jpg"
+                class="img-fluid rounded shadow w-100"
+                alt="Thumbnail Perhutani Jatim"
+              />
+              <span class="pulsating-play-btn"></span>
+            </a>
+          </div>
 
-            
-            <div
-              class="col-lg-6 content"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <h3>Sejarah Singkat & Profil Perusahaan</h3>
-              <p class="fst-justify">
-                Perum Perhutani merupakan Badan Usaha Milik Negara (BUMN) yang
-                diberi tugas dan wewenang untuk mengelola sumber daya hutan
-                negara di Pulau Jawa dan Madura.
-              </p>
-              <ul>
-                <li>
-                  <li style="text-align: justify;"></li>
-                  <i class="bi bi-clock-history"></i>
-                  <span
-                    ><strong>Sejarah Berdiri:</strong> Berasal dari penggabungan Perusahaan Hutan Negara (Perhutani) berdasarkan regulasi pemerintah sejak tahun 1961 dan berkembang menjadi Perum Perhutani hingga saat ini.</span
-                  >
-                </li>
-                <li>
-                  <li style="text-align: justify;"></li>
-                  <i class="bi bi-geo"></i>
-                  <span
-                    ><strong>Wilayah Kerja Divisi Regional Jatim:</strong> Mengelola
-                    Kesatuan Pemangkuan Hutan (KPH) yang tersebar di wilayah
-                    Jawa Timur meliputi kawasan hutan produksi dan hutan
-                    lindung.</span
-                  >
-                </li>
-                <li>
-                  <li style="text-align: justify;"></li>
-                  <i class="bi bi-shield-check"></i>
-                  <span
-                    ><strong>Prinsip Pengelolaan:</strong> Menerapkan aspek
-                    ekologi, ekonomi, dan sosial secara seimbang melalui
-                    kelestarian hasil dan pemberdayaan masyarakat sekitar
-                    hutan.</span
-                  >
-                </li>
-              </ul>
-              <p>
-                Perhutani Jawa Timur terus berkomitmen menjalankan bisnis
-                kehutanan yang modern, transparan, dan berkelanjutan guna
-                mendukung ketahanan lingkungan nasional.
-              </p>
-            </div>
+          <div
+            class="col-lg-6 content about-content-compact"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 class="mb-2 fs-4">Sejarah Singkat & Profil Perusahaan</h3>
+            <p class="text-justify mb-2">
+              Perum Perhutani merupakan BUMN yang diberi tugas mengelola sumber
+              daya hutan negara di Pulau Jawa dan Madura secara berkelanjutan.
+            </p>
+            <ul class="list-unstyled mb-2">
+              <li class="d-flex text-justify">
+                <i
+                  class="bi bi-clock-history me-2 text-success flex-shrink-0 mt-1"
+                ></i>
+                <span
+                  ><strong>Sejarah Berdiri:</strong> Hasil penggabungan
+                  Perusahaan Hutan Negara sejak 1961 hingga menjadi Perum
+                  Perhutani.</span
+                >
+              </li>
+              <li class="d-flex text-justify">
+                <i class="bi bi-geo me-2 text-success flex-shrink-0 mt-1"></i>
+                <span
+                  ><strong>Wilayah Kerja:</strong> Mengelola Kesatuan Pemangkuan
+                  Hutan (KPH) di Jawa Timur (hutan produksi & lindung).</span
+                >
+              </li>
+              <li class="d-flex text-justify">
+                <i
+                  class="bi bi-shield-check me-2 text-success flex-shrink-0 mt-1"
+                ></i>
+                <span
+                  ><strong>Prinsip:</strong> Menerapkan aspek ekologi, ekonomi,
+                  dan sosial secara seimbang demi kelestarian hutan.</span
+                >
+              </li>
+            </ul>
+            <p class="text-justify mb-0">
+              Perhutani Jatim berkomitmen menjalankan bisnis kehutanan yang
+              modern, transparan, dan berkelanjutan untuk ketahanan lingkungan
+              nasional.
+            </p>
           </div>
         </div>
-      </section>
-      
-      <section id="produk" class="services section light-background">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Produk yang Dihasilkan</h2>
-          <p>
-           Berikut merupakan Produk yang dihasilkan PT Perhutani Jatim
-          </p>
-        </div>
+      </div>
+    </section>
 
-        <div class="container">
-          <div class="row g-4">
+    <section id="produk" class="services section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Produk yang Dihasilkan</h2>
+        <p>Berikut merupakan Produk Hasil Hutan PT Perhutani Jatim</p>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <!-- Item 1: Kayu Jati -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
+              class="service-item item-cyan text-center p-3 h-100 d-flex flex-column justify-content-between"
             >
-              <div
-                class="service-item item-cyan position-relative text-center p-3"
-              >
+              <div>
                 <a
                   href="assets/img/portfolio/Jati.jpg"
-                  class="glightbox"
-                  title="Kayu Jati (Tectona grandis)"
+                  class="glightbox d-block"
+                  data-gallery="produk-gallery"
+                  data-type="image"
+                  data-title="Kayu Jati (Tectona grandis)"
                 >
                   <img
                     src="assets/img/portfolio/Jati.jpg"
                     class="img-fluid rounded mb-3"
                     alt="Kayu Jati"
-                    style="height: 200px; width: 100%; object-fit: cover"
+                    style="height: 220px; width: 100%; object-fit: cover"
                   />
                 </a>
-                <h3>
-                  <a
-                    href="assets/img/portfolio/Jati.jpg"
-                    class="glightbox stretched-link"
-                    title="Kayu Jati (Tectona grandis)"
-                    >Kayu Jati (Tectona grandis)</a
-                  >
-                </h3>
-                <p>
+                <h3 class="fs-5 fw-bold mb-2">Kayu Jati (Tectona grandis)</h3>
+                <p class="small text-muted mb-0">
                   Produk kayu pertukangan dan konstruksi kelas atas yang
                   memiliki keawetan dan nilai estetika serat sangat tinggi.
                 </p>
               </div>
             </div>
-            
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
+              class="service-item item-orange text-center p-3 h-100 d-flex flex-column justify-content-between"
             >
-              <div
-                class="service-item item-orange position-relative text-center p-3"
-              >
+              <div>
                 <a
                   href="assets/img/portfolio/gondorukem.jpg"
-                  class="glightbox"
-                  title="Gondorukem (Gum Rosin)"
+                  class="glightbox d-block"
+                  data-gallery="produk-gallery"
+                  data-type="image"
+                  data-title="Gondorukem (Gum Rosin)"
                 >
                   <img
                     src="assets/img/portfolio/gondorukem.jpg"
                     class="img-fluid rounded mb-3"
                     alt="Gondorukem"
-                    style="height: 200px; width: 100%; object-fit: cover"
+                    style="height: 220px; width: 100%; object-fit: cover"
                   />
                 </a>
-                <h3>
-                  <a
-                    href="assets/img/portfolio/gondorukem.jpg"
-                    class="glightbox stretched-link"
-                    title="Gondorukem (Gum Rosin)"
-                    >Gondorukem (Gum Rosin)</a
-                  >
-                </h3>
-                <p>
+                <h3 class="fs-5 fw-bold mb-2">Gondorukem (Gum Rosin)</h3>
+                <p class="small text-muted mb-0">
                   Hasil olahan getah pinus yang digunakan sebagai bahan baku
                   industri sabun, cat, kertas, pelapis, dan perekat.
                 </p>
               </div>
             </div>
-           
+          </div>
+
+         
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
+              class="service-item item-teal text-center p-3 h-100 d-flex flex-column justify-content-between"
             >
-              <div
-                class="service-item item-teal position-relative text-center p-3"
-              >
+              <div>
                 <a
-                  href="assets/img/portfolio/terpentin produk.jfif"
-                  class="glightbox"
-                  title="Minyak Terpentin"
+                  href="assets/img/portfolio/terpentin%20produk.jfif"
+                  class="glightbox d-block"
+                  data-gallery="produk-gallery"
+                  data-type="image"
+                  data-title="Minyak Terpentin"
                 >
                   <img
-                    src="assets/img/portfolio/terpentin produk.jfif"
+                    src="assets/img/portfolio/terpentin%20produk.jfif"
                     class="img-fluid rounded mb-3"
                     alt="Minyak Terpentin"
-                    style="height: 200px; width: 100%; object-fit: cover"
+                    style="height: 220px; width: 100%; object-fit: cover"
                   />
                 </a>
-                <h3>
-                  <a
-                    href="assets/img/portfolio/terpentin produk.jfif"
-                    class="glightbox stretched-link"
-                    title="Minyak Terpentin"
-                    >Minyak Terpentin</a
-                  >
-                </h3>
-                <p>
+                <h3 class="fs-5 fw-bold mb-2">Minyak Terpentin</h3>
+                <p class="small text-muted mb-0">
                   Cairan pelarut murni hasil olahan destilasi getah pinus untuk
                   industri farmasi, kosmetik, dan bahan kimia murni.
                 </p>
               </div>
             </div>
+          </div>
+
+        
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
+              class="service-item item-red text-center p-3 h-100 d-flex flex-column justify-content-between"
             >
-              <div
-                class="service-item item-red position-relative text-center p-3"
-              >
+              <div>
                 <a
-                  href="assets/img/portfolio/kayu rimba.jpg"
-                  class="glightbox"
-                  title="Kayu Rimba (Mahoni, Pinus)"
+                  href="assets/img/portfolio/kayu%20rimba.jpg"
+                  class="glightbox d-block"
+                  data-gallery="produk-gallery"
+                  data-type="image"
+                  data-title="Kayu Rimba (Mahoni, Pinus)"
                 >
                   <img
-                    src="assets/img/portfolio/kayu rimba.jpg"
+                    src="assets/img/portfolio/kayu%20rimba.jpg"
                     class="img-fluid rounded mb-3"
                     alt="Kayu Rimba"
-                    style="height: 200px; width: 100%; object-fit: cover"
+                    style="height: 220px; width: 100%; object-fit: cover"
                   />
                 </a>
-                <h3>
-                  <a
-                    href="assets/img/portfolio/kayu rimba.jpg"
-                    class="glightbox stretched-link"
-                    title="Kayu Rimba (Mahoni, Pinus)"
-                    >Kayu Rimba (Mahoni, Pinus)</a
-                  >
-                </h3>
-                <p>
+                <h3 class="fs-5 fw-bold mb-2">Kayu Rimba (Mahoni, Pinus)</h3>
+                <p class="small text-muted mb-0">
                   Kayu olahan non-jati berkualitas tinggi yang dimanfaatkan
                   untuk furniture, industri bahan bangunan, dan kerajinan.
                 </p>
               </div>
             </div>
-           
+          </div>
+
+         
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="500"
+              class="service-item item-indigo text-center p-3 h-100 d-flex flex-column justify-content-between"
             >
-              <div
-                class="service-item item-indigo position-relative text-center p-3"
-              >
+              <div>
                 <a
-                  href="assets/img/portfolio/kayu putihhh.jpg"
-                  class="glightbox"
-                  title="Minyak Kayu Putih"
+                  href="assets/img/portfolio/kayu%20putihhh.jpg"
+                  class="glightbox d-block"
+                  data-gallery="produk-gallery"
+                  data-type="image"
+                  data-title="Minyak Kayu Putih"
                 >
                   <img
-                    src="assets/img/portfolio/kayu putihhh.jpg"
+                    src="assets/img/portfolio/kayu%20putihhh.jpg"
                     class="img-fluid rounded mb-3"
                     alt="Minyak Kayu Putih"
-                    style="height: 200px; width: 100%; object-fit: cover"
+                    style="height: 220px; width: 100%; object-fit: cover"
                   />
                 </a>
-                <h3>
-                  <a
-                    href="assets/img/portfolio/kayu putihhh.jpg"
-                    class="glightbox stretched-link"
-                    title="Minyak Kayu Putih"
-                    >Minyak Kayu Putih</a
-                  >
-                </h3>
-                <p>
+                <h3 class="fs-5 fw-bold mb-2">Minyak Kayu Putih</h3>
+                <p class="small text-muted mb-0">
                   Produk herbal alami hasil penyulingan daun kayu putih murni
                   dari kawasan hutan Perhutani.
                 </p>
               </div>
             </div>
-         
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div
-                class="service-item item-pink position-relative text-center p-3"
-              >
-                <a
-                  href="assets/img/portfolio/wisata.jpeg"
-                  class="glightbox"
-                  title="Wisata Alam & Ekowisata"
-                >
-                  <img
-                    src="assets/img/portfolio/wisata.jpeg"
-                    class="img-fluid rounded mb-3"
-                    alt="Wisata Alam"
-                    style="height: 200px; width: 100%; object-fit: cover"
-                  />
-                </a>
-                <h3>
-                  <a
-                    href="assets/img/portfolio/wisata.jpeg"
-                    class="glightbox stretched-link"
-                    title="Wisata Alam & Ekowisata"
-                    >Wisata Alam & Ekowisata</a
-                  >
-                </h3>
-                <p>
-                  Layanan destinasi wisata alam, bumi perkemahan, rintisan
-                  ekowisata, dan pemanfaatan jasa aliran air.
-                </p>
-              </div>
-            </div>
-            
           </div>
         </div>
-      </section>
-      
-      <section id="struktural" class="team section">
-        
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Struktural Perusahaan</h2>
-          <p>Struktur Organisasi Resmi Perum Perhutani Divisi Regional</p>
-        </div>
-       
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-              <div class="p-4 p-md-5 bg-light rounded-4 shadow-sm border">
-                <div class="mb-3">
-                  <i
-                    class="bi bi-file-earmark-pdf-fill text-danger"
-                    style="font-size: 4rem"
-                  ></i>
-                </div>
-                <h3 class="fw-bold mb-3">
-                  Dokumen Struktur Organisasi Divisi Regional
-                </h3>
-                <p class="text-muted mb-4">
-                  Berdasarkan Keputusan Direksi Perum Perhutani mengenai
-                  Struktur Organisasi Divisi Regional (Departemen Perencanaan &
-                  Pengembangan Bisnis, Departemen Pengelolaan SDH & Produksi,
-                  serta Departemen SDM, Umum, IT & Keuangan).
-                </p>
+      </div>
+    </section>
 
-                
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                  <a
-                    href="assets/dokumen/Struktur Organisasi Perhutani Divisi Regional - 2024.pdf"
-                    target="_blank"
-                    class="btn btn-success btn-lg px-4 py-2"
-                  >
-                    <i class="bi bi-eye-fill me-2"></i> Lihat Dokumen PDF
-                  </a>
-                  <a
-                    href="assets/dokumen/Struktur Organisasi Perhutani Divisi Regional - 2024.pdf"
-                    download
-                    class="btn btn-outline-success btn-lg px-4 py-2"
-                  >
-                    <i class="bi bi-download me-2"></i> Unduh PDF
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-     <!-- 5. ALAMAT & MAPS SECTION -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
+    <section id="wisata" class="services section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Alamat & Maps</h2>
-        <p>Lokasi Kantor Pusat PT Perum Perhutani Divisi Regional Jawa Timur</p>
-      </div><!-- End Section Title -->
+        <h2>Wisata Alam & Ekowisata</h2>
+        <p>
+          Layanan Destinasi Wisata Alam dan Pengembangan Potensi Kawasan Hutan
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="service-item item-pink text-center p-4 rounded shadow-sm border"
+            >
+              <a
+                href="assets/img/portfolio/wisata.jpeg"
+                class="glightbox"
+                data-gallery="portfolio-gallery"
+                title="Wisata Alam & Ekowisata"
+              >
+                <img
+                  src="assets/img/portfolio/wisata.jpeg"
+                  class="img-fluid rounded mb-3"
+                  alt="Wisata Alam"
+                  style="max-height: 350px; width: 100%; object-fit: cover"
+                />
+              </a>
+              <h3 class="mt-2 fs-4">Destinasi Wisata & Jasa Lingkungan</h3>
+              <p class="text-justify">
+                PT Perum Perhutani Divisi Regional Jawa Timur mengelola berbagai
+                rintisan ekowisata, bumi perkemahan (camping ground),
+                pemanfaatan aliran air, dan petualangan alam terbuka yang
+                dikembangkan berbasis keterlibatan masyarakat (LMDH).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="struktural" class="team section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Struktural Perusahaan</h2>
+        <p>
+          Struktur Organisasi Resmi Perum Perhutani Divisi Regional Jawa Timur
+        </p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <div class="p-4 bg-white rounded-4 shadow-sm border">
+              <div class="mb-4">
+                <a
+                  href="assets/img/struktur organisasi.png"
+                  class="glightbox"
+                  title="Struktur Organisasi Perhutani Jatim"
+                >
+                  <img
+                    src="assets/img/struktur organisasi.png"
+                    alt="Struktur Organisasi Perhutani Jatim"
+                    class="img-fluid rounded shadow-sm border mb-3"
+                    style="max-height: 520px; width: auto"
+                  />
+                </a>
+              </div>
+              <h4 class="fw-bold mb-2">Bagan Struktur Organisasi</h4>
+              <p class="text-muted mb-4">
+                Departemen Perencanaan & Pengembangan Bisnis, Pengelolaan SDH &
+                Produksi, SDM, Umum, IT & Keuangan.
+              </p>
 
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a
+                  href="assets/dokumen/Struktur Organisasi Perhutani Divisi Regional - 2024.pdf"
+                  target="_blank"
+                  class="btn btn-success btn-lg px-4 py-2"
+                >
+                  <i class="bi bi-eye-fill me-2"></i> Lihat PDF
+                </a>
+                <a
+                  href="assets/dokumen/Struktur Organisasi Perhutani Divisi Regional - 2024.pdf"
+                  download
+                  class="btn btn-outline-success btn-lg px-4 py-2"
+                >
+                  <i class="bi bi-download me-2"></i> Unduh Dokumen
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Alamat</h2>
+        <p>Lokasi Kantor Pusat PT Perum Perhutani Divisi Regional Jawa Timur</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-
-          <!-- KOLOM KIRI: INFORMASI ALAMAT & MAPS -->
           <div class="col-lg-6">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="info-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Alamat Lengkap</h3>
-                <p>Jl. Gentengkali No. 49, Genteng, Kec. Genteng, Kota Surabaya, Jawa Timur 60275</p>
+                <p>
+                  Jl. Gentengkali No. 49, Genteng, Kec. Genteng, Kota Surabaya,
+                  Jawa Timur 60275
+                </p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="info-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Telepon Kantor</h3>
                 <p>(031) 5343881 / 5343882</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="info-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Resmi</h3>
                 <p>humas.jatim@perhutani.co.id</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
-            <!-- GOOGLE MAPS EMBED -->
-            <div class="mt-4 rounded overflow-hidden shadow-sm border" style="height: 250px;">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.947230495804!2d112.74287867499971!3d-7.246830192759902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f961230113c5%3A0x64db59a3fa274889!2sPerum%20Perhutani%20Divisi%20Regional%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+          
+            <div
+              class="mt-4 rounded overflow-hidden shadow-sm border"
+              style="height: 260px"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.9482813159286!2d112.74283127588329!3d-7.246714971182283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f961230113c5%3A0x64db59a3fa274889!2sPerum%20Perhutani%20Divisi%20Regional%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
               </iframe>
             </div>
           </div>
 
-          <!-- KOLOM KANAN: JAM OPERASIONAL & LAYANAN CEPAT (PENGGANTI FORM EMAIL) -->
           <div class="col-lg-6">
             <div class="p-4 bg-light rounded shadow-sm border h-100">
-              <h3 class="fw-bold mb-4 text-success"><i class="bi bi-clock-history me-2"></i>Jam Operasional & Layanan</h3>
-              
+              <h3 class="fw-bold mb-4 text-success">
+                <i class="bi bi-clock-history me-2"></i>Jam Operasional &
+                Layanan
+              </h3>
+
               <div class="mb-4">
                 <h5 class="fw-bold">Hari Kerja:</h5>
-                <p class="mb-1"><strong>Senin - Kamis:</strong> 07.30 - 16.00 WIB</p>
+                <p class="mb-1">
+                  <strong>Senin - Kamis:</strong> 07.30 - 16.00 WIB
+                </p>
                 <p class="mb-1"><strong>Jumat:</strong> 07.30 - 16.30 WIB</p>
-                <p class="text-muted small"><strong>Sabtu, Minggu & Hari Libur Nasional:</strong> Tutup</p>
+                <p class="text-muted small">
+                  <strong>Sabtu, Minggu & Hari Libur Nasional:</strong> Tutup
+                </p>
               </div>
 
-              <hr class="my-4">
+              <hr class="my-4" />
 
-              <h4 class="fw-bold mb-3 text-success"><i class="bi bi-headset me-2"></i>Pusat Informasi & Pengaduan</h4>
-              <p class="text-muted small mb-4">Untuk informasi kerja sama ekowisata, pembelian produk kayu/non-kayu, atau pengaduan masyarakat, silakan hubungi kontak resmi kami di bawah ini:</p>
+              <h4 class="fw-bold mb-3 text-success">
+                <i class="bi bi-headset me-2"></i>Pusat Informasi & Pengaduan
+              </h4>
+              <p class="text-muted small mb-4">
+                Untuk informasi kerja sama ekowisata, pembelian produk
+                kayu/non-kayu, atau pengaduan masyarakat, silakan hubungi kontak
+                resmi kami di bawah ini:
+              </p>
 
               <div class="d-grid gap-3">
-                <a href="tel:0315343881" class="btn btn-outline-success btn-lg text-start">
-                  <i class="bi bi-telephone-fill me-2"></i> Hubungi Telepon Kantor
+                <a
+                  href="tel:0315343881"
+                  class="btn btn-outline-success btn-lg text-start"
+                >
+                  <i class="bi bi-telephone-fill me-2"></i> Hubungi Telepon
+                  Kantor
                 </a>
-                <a href="mailto:humas.jatim@perhutani.co.id" class="btn btn-success btn-lg text-start">
+                <a
+                  href="mailto:humas.jatim@perhutani.co.id"
+                  class="btn btn-success btn-lg text-start"
+                >
                   <i class="bi bi-envelope-fill me-2"></i> Kirim Email Kemitraan
                 </a>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Alamat & Maps Section -->
-
-    <footer id="footer" class="footer dark-background">
-      <div class="container footer-top">
+   
+    <footer id="footer" class="footer footer-custom-theme py-5">
+      <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">PT Perhutani Jatim</span>
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center mb-3">
+              <span class="sitename fs-4 fw-bold text-white"
+                >PT Perhutani Jatim</span
+              >
             </a>
-            <p>
+            <p class="small text-light">
               PT Perum Perhutani Divisi Regional Jawa Timur berkomitmen
               mengelola sumber daya hutan lestari serta mengoptimalkan peran
               ekonomi, sosial, dan lingkungan.
             </p>
-
-            <div class="social-links d-flex mt-4">
-              <a href="https://x.com/perumperhutani" target="_blank"
+            <div class="social-links d-flex gap-3 mt-3">
+              <a
+                href="https://x.com/perumperhutani"
+                target="_blank"
+                class="text-white fs-5"
                 ><i class="bi bi-twitter-x"></i
               ></a>
-              <a href="https://facebook.com/perumperhutani" target="_blank"
+              <a
+                href="https://facebook.com/perumperhutani"
+                target="_blank"
+                class="text-white fs-5"
                 ><i class="bi bi-facebook"></i
               ></a>
-              <a href="https://instagram.com/perumperhutani" target="_blank"
+              <a
+                href="https://instagram.com/perumperhutani"
+                target="_blank"
+                class="text-white fs-5"
                 ><i class="bi bi-instagram"></i
               ></a>
               <a
                 href="https://linkedin.com/company/perum-perhutani"
                 target="_blank"
+                class="text-white fs-5"
                 ><i class="bi bi-linkedin"></i
               ></a>
             </div>
           </div>
 
-<footer id="footer" class="footer dark-background py-4">
-
-  <div class="container">
-    <div class="row justify-content-between align-items-center gy-4">
-     
-      <div class="col-lg-5 text-center text-lg-start">
-        <p class="mb-1">&copy; <strong>PT Perum Perhutani Divisi Regional Jawa Timur</strong>. All Rights Reserved.</p>
-        <p class="text-white-50 small mb-0"><i class="bi bi-geo-alt me-1"></i>Jl. Gentengkali No. 49, Surabaya, Jawa Timur</p>
-      </div>
-
-   
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Navigasi Halaman</h4>
-            <ul>
-              <li><a href="#hero">1. Beranda</a></li>
-              <li><a href="#about">2. Sejarah & Detail</a></li>
-              <li><a href="#produk">3. Produk Dihasilkan</a></li>
-              <li><a href="#struktural">4. Struktural</a></li>
-              <li><a href="#contact">5. Maps & Alamat</a></li>
+          <div class="col-lg-3 col-6 footer-links">
+            <h4 class="fs-6 fw-bold text-white mb-3">Navigasi Halaman</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#hero">Beranda</a></li>
+              <li class="mb-2"><a href="#about">Sejarah</a></li>
+              <li class="mb-2"><a href="#produk">Produk Dihasilkan</a></li>
+              <li class="mb-2"><a href="#wisata">Wisata Alam</a></li>
+              <li class="mb-2"><a href="#struktural">Struktural</a></li>
+              <li class="mb-2"><a href="#contact">Alamat</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Produk Utama</h4>
-            <ul>
-              <li><a href="#produk">Kayu Jati & Rimba</a></li>
-              <li><a href="#produk">Gondorukem</a></li>
-              <li><a href="#produk">Terpentin</a></li>
-              <li><a href="#produk">Minyak Kayu Putih</a></li>
-              <li><a href="#produk">Ekowisata Hutan</a></li>
+            <h4 class="fs-6 fw-bold text-white mb-3">Produk Utama</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#produk">Kayu Jati & Rimba</a></li>
+              <li class="mb-2"><a href="#produk">Gondorukem</a></li>
+              <li class="mb-2"><a href="#produk">Terpentin</a></li>
+              <li class="mb-2"><a href="#produk">Minyak Kayu Putih</a></li>
+              <li class="mb-2"><a href="#wisata">Ekowisata Hutan</a></li>
             </ul>
           </div>
 
-          <div
-            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-          >
-            <h4>Kantor Divisi Regional Jatim</h4>
-            <p>Jl. Gentengkali No.49, Genteng</p>
-            <p>Surabaya, Jawa Timur 60275</p>
-            <p>Indonesia</p>
-            <p class="mt-4">
-              <strong>Telepon:</strong> <span>(031) 5343881</span>
-            </p>
-            <p>
-              <strong>Email:</strong> <span>humas.jatim@perhutani.co.id</span>
+          <div class="col-lg-3 col-md-12 footer-contact">
+            <h4 class="fs-6 fw-bold text-white mb-3">
+              Kantor Divisi Regional Jatim
+            </h4>
+            <p class="small mb-1">Jl. Gentengkali No.49, Genteng</p>
+            <p class="small mb-1">Surabaya, Jawa Timur 60275</p>
+            <p class="small mb-3">Indonesia</p>
+            <p class="small mb-1"><strong>Telepon:</strong> (031) 5343881</p>
+            <p class="small mb-0">
+              <strong>Email:</strong> humas.jatim@perhutani.co.id
             </p>
           </div>
+        </div>
+
+        <hr class="my-4 border-light opacity-25" />
+
+        <div class="text-center small">
+          <p class="mb-0">
+            &copy;
+            <strong>PT Perum Perhutani Divisi Regional Jawa Timur</strong>. All
+            Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
@@ -727,6 +902,7 @@
     ></a>
 
     <div id="preloader"></div>
+
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
